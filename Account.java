@@ -24,7 +24,7 @@ public class Account {
 	void setBalance(int newBalance) {
 		balance=newBalance;
 	}
-	void setYearInterestRate(int newYearInterstRate) {
+	static void setYearInterestRate(int newYearInterstRate) {
 		yearInterestRate=newYearInterstRate;
 	}
 	int getID() {
