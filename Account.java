@@ -5,42 +5,42 @@ import java.util.Date;
 public class Account {
 	private int id=0;
 	private double balance=0;
-	private double yearInterestRate=0;
+	private static double yearInterestRate=0;
 	private Date dateCreated=new Date();
 	Account(){
 		//default values
 	}
 	Account(int newId, double newBalance, double newYearInterestRate){
-		this.id = newId;
-		this.balance = newBalance;
-		this.yearInterestRate=newYearInterestRate;
+		id = newId;
+		balance = newBalance;
+		yearInterestRate=newYearInterestRate;
 	}
 	String dateCreated() {
 		return dateCreated.toString();
 	}
 	void setID(int newID) {
-		this.id=newID;
+		id=newID;
 	}
 	void setBalance(int newBalance) {
-		this.balance=newBalance;
+		balance=newBalance;
 	}
 	void setYearInterestRate(int newYearInterstRate) {
-		this.yearInterestRate=newYearInterstRate;
+		yearInterestRate=newYearInterstRate;
 	}
 	int getID() {
-		return this.id;
+		return id;
 	}
 	double getBalance() {
 		return this.balance;
 	}
 	double getYearInterestRate() {
-		return this.yearInterestRate;
+		return yearInterestRate;
 	}
 	double getMonthlyInterestRate() {
-		return this.yearInterestRate/12;
+		return yearInterestRate/12;
 	}
 	double getMontlyInterest() {
-		return (this.yearInterestRate/12)*this.balance;
+		return (yearInterestRate/12)*this.balance;
 	}
 	void withdraw(int a) {
 		balance-=a;
