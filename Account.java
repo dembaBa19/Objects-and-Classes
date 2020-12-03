@@ -5,7 +5,7 @@ import java.util.Date;
 public class Account {
 	private int id=0;
 	private double balance=0;
-	private static double yearInterestRate=0;
+	public static double yearInterestRate=0;
 	private Date dateCreated=new Date();
 	Account(){
 		//default values
